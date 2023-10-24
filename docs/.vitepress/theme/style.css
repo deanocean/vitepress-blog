@@ -84,6 +84,10 @@
   --vp-button-brand-active-border: transparent;
   --vp-button-brand-active-text: var(--vp-c-white);
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
+  --vp-button-alt-bg: var(--vp-c-red-3);
+  --vp-button-alt-hover-bg: var(--vp-c-red-2);
+  --vp-button-alt-text: var(--vp-c-white);
+  --vp-button-alt-hover-text: var(--vp-c-white);
 }
 
 /**

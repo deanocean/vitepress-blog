@@ -6,12 +6,12 @@ hero:
   name: "Tech Blog"
   tagline: Knowledge for Web, Front-End, Back-End, Server...
   actions:
-    - theme: brand
-      text: 繁體中文
-      link: /about
     - theme: alt
       text: 日本語
       link: /ja/about
+    - theme: brand
+      text: 繁體中文
+      link: /about
 
 features:
   # - title: Feature A
