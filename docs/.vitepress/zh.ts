@@ -1,8 +1,8 @@
 import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 
-export const META_URL = 'https://deanocean.github.io/vitepress-blog/ja/'
+export const META_URL = 'https://deanocean.github.io/vitepress-blog/'
 export const META_TITLE = 'Tech Blog'
-export const META_DESCRIPTION = 'Web技術ブログ'
+export const META_DESCRIPTION = '網頁技術分享'
 
 export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
   description: META_DESCRIPTION,

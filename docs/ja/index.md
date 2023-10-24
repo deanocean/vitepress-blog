@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Tech Blog"
-  tagline: Knowledge for Web, Front-End, Back-End, Server...
+  tagline: Web技術ブログ
   actions:
     - theme: alt
       text: 日本語
@@ -13,12 +13,12 @@ hero:
       text: 繁體中文
       link: /about
 
-features:
-  # - title: Feature A
-  #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  # - title: Feature B
-  #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  # - title: Feature C
-  #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+# features:
+#   - title: Front-End
+#     details: HTML, CSS, Vue.js, Nuxt.js, TypeScript
+#   - title: Building Tools
+#     details: Vite, VitePress
+#   - title: CMS
+#     details: WordPress, Movable Type
 ---
 

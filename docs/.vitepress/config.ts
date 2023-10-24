@@ -30,6 +30,8 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
+
+    i18nRouting: false
   },
   locales: {
     root: {
@@ -44,5 +46,5 @@ export default defineConfig({
       link: '/ja/', // default /ja/ -- shows on navbar translations menu, can be external
       ...jaConfig
     }
-  }
+  },
 })
