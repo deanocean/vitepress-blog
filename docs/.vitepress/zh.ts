@@ -35,6 +35,12 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
         items: [
           { text: '關於本站', link: '/about' },
         ]
+      },
+      {
+        text: 'Nuxt',
+        items: [
+          { text: '在Nuxt定義TypeScript的 global interface', link: '/nuxt_ts-global' },
+        ]
       }
     ],
     
