@@ -36,10 +36,16 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
           { text: 'このサイトについて', link: '/ja/about' },
         ]
       },
+      // {
+      //   text: 'Nuxt',
+      //   items: [
+      //     { text: 'Nuxt で TypeScript のglobal interface を使う', link: '/ja/nuxt_ts-global' },
+      //   ]
+      // },
       {
-        text: 'Nuxt',
+        text: 'Movable Type',
         items: [
-          { text: 'Nuxt で TypeScript のglobal interface を使う', link: '/ja/nuxt_ts-global' },
+          { text: 'Movable Type 勉強マニュアル', link: '/ja/mt_learn' },
         ]
       }
     ],
