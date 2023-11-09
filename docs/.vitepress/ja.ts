@@ -26,29 +26,95 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/ja/' },
+      { text: 'Markup', link: '/ja/markup/' },
+      { text: 'Front-End', link: '/ja/frontend/' },
+      { text: 'WordPress', link: '/ja/wp/' },
+      { text: 'MovableType', link: '/ja/mt/' },
+      { text: 'Server', link: '/ja/server/' },
       { text: 'About', link: '/ja/about' }
     ],
 
-    sidebar: [
-      {
-        text: '',
-        items: [
-          { text: 'このサイトについて', link: '/ja/about' },
-        ]
-      },
-      // {
-      //   text: 'Nuxt',
-      //   items: [
-      //     { text: 'Nuxt で TypeScript のglobal interface を使う', link: '/ja/nuxt_ts-global' },
-      //   ]
-      // },
-      {
-        text: 'Movable Type',
-        items: [
-          { text: 'Movable Type 勉強マニュアル', link: '/ja/mt_learn' },
-        ]
-      }
-    ],
+    sidebar: {
+      '/ja/markup/': [
+        {
+          text: 'Markup',
+          items: [
+            // {
+            //   text: 'HTML',
+            //   items: [
+            //     // { text: '', link: '/ja/markup/xxx' },
+            //   ]
+            // },
+            // {
+            //   text: 'CSS',
+            //   items: [
+            //     // { text: '', link: '/ja/markup/xxx' },
+            //   ]
+            // },
+          ]
+        },
+      ],
+      '/ja/frontend/': [
+        {
+          text: 'Front-End',
+          items: [
+            // {
+            //   text: 'JavaScript',
+            //   items: [
+            //     // { text: '', link: '/ja/frontend/xxx' },
+            //   ]
+            // },
+            // {
+            //   text: 'TypeScript',
+            //   items: [
+            //     // { text: '', link: '/ja/frontend/xxx' },
+            //   ]
+            // },
+            // {
+            //   text: 'Vue.js',
+            //   items: [
+            //     // { text: '', link: '/ja/frontend/xxx' },
+            //   ]
+            // },
+            // {
+            //   text: 'Nuxt.js',
+            //   items: [
+            //     // { text: 'Nuxt で TypeScript のglobal interface を使う', link: '/ja/frontend/nuxt_ts-global' },
+            //   ]
+            // },
+          ]
+        },
+      ],
+      '/ja/wp/': [
+        {
+          text: 'WordPress',
+          items: [
+            // { text: 'Movable Type 勉強マニュアル', link: '/ja/mt/mt_learn' },
+          ]
+        },
+      ],
+      '/ja/mt/': [
+        {
+          text: 'MovableType',
+          items: [
+            { text: 'Movable Type 勉強マニュアル', link: '/ja/mt/mt_learn' },
+          ]
+        },
+      ],
+      '/ja/server/': [
+        {
+          text: 'Server',
+          items: [
+            {
+              text: 'さくらサーバー',
+              items: [
+                { text: 'サブドメインにテストサイトのWordPressを移行する', link: '/ja/server/sakura_subdomain' },
+              ]
+            },
+          ]
+        }
+      ]
+    },
     
   },
 }

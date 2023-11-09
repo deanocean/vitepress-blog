@@ -26,23 +26,75 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Markup', link: '/markup/' },
+      { text: 'Front-End', link: '/frontend/' },
+      { text: 'WordPress', link: '/wp/' },
+      { text: 'Server', link: '/server/' },
       { text: 'About', link: '/about' }
     ],
 
-    sidebar: [
-      {
-        text: '',
-        items: [
-          { text: '關於本站', link: '/about' },
-        ]
-      },
-      {
-        text: 'Nuxt',
-        items: [
-          { text: '在Nuxt定義TypeScript的 global interface', link: '/nuxt_ts-global' },
-        ]
-      }
-    ],
+    sidebar: {
+      '/markup/': [
+        {
+          text: 'Markup',
+          items: [
+            { text: '前端切版學習資源彙整', link: '/markup/learn' },
+          ]
+        },
+      ],
+      '/frontend/': [
+        {
+          text: 'Front-End',
+          items: [
+            // {
+            //   text: 'JavaScript',
+            //   items: [
+            //     // { text: '', link: '/frontend/xxx' },
+            //   ]
+            // },
+            // {
+            //   text: 'TypeScript',
+            //   items: [
+            //     // { text: '', link: '/frontend/xxx' },
+            //   ]
+            // },
+            // {
+            //   text: 'Vue.js',
+            //   items: [
+            //     // { text: '', link: '/frontend/xxx' },
+            //   ]
+            // },
+            // {
+            //   text: 'Nuxt.js',
+            //   items: [
+            //     // { text: 'Nuxt で TypeScript のglobal interface を使う', link: '/frontend/nuxt_ts-global' },
+            //   ]
+            // },
+          ]
+        },
+      ],
+      '/wp/': [
+        {
+          text: 'WordPress',
+          items: [
+            // { text: 'Movable Type 勉強マニュアル', link: '/mt/mt_learn' },
+          ]
+        },
+      ],
+      '/server/': [
+        {
+          text: 'Server',
+          items: [
+            // {
+            //   text: 'さくらサーバー',
+            //   items: [
+            //     { text: 'サブドメインにテストサイトのWordPressを移行する', link: '/server/sakura_subdomain' },
+            //   ]
+            // },
+          ]
+        }
+      ]
+    },
     
   },
 }

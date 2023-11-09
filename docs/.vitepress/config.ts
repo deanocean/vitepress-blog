@@ -7,6 +7,10 @@ export default defineConfig({
   base: '/vitepress-blog/',
   title: "Tech Blog",
   description: "Knowledge for Web, Front-End, Back-End, Server...",
+  lastUpdated: true,
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
