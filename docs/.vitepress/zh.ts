@@ -39,6 +39,7 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
           text: 'Markup',
           items: [
             { text: '前端切版學習資源彙整', link: '/markup/learn' },
+            { text: '讓 iframe 可以響應式等比縮放', link: '/markup/iframe-ratio' },
           ]
         },
       ],

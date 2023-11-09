@@ -2,14 +2,13 @@
 
 ## 前書き
 
-ブログサイトのWordPressをテストサイト(Xserver)から本番サイト(Sakura)のサブドメインとして移行した手順です。
+仕事で依頼された、ブログサイトのWordPressをテストサイト(Xserver)から本番サイト(Sakura)のサブドメインとして移行した手順です。
 
 **テストサイト**  
-https://le-collection-blog.envi-de-mode-81.work  
-Basic: le-collection / ptest  
+例：https://test.com  
 ↓  
-**本番サイト(https://www.le-collection.com)のサブドメイン**  
-https://blog.le-collection.com
+**本番サイト(https://www.example.com)のサブドメイン**  
+例：https://blog.example.com
 
 
 ## 手順
@@ -37,7 +36,7 @@ phpMyAdminからsqlファイルをエクスポートします
 
 ## サブドメインの追加
 
-blog.le-collection.com を新規追加します。
+blog.example.com を新規追加します。
 
 左メニューにある ドメイン/SSL > ドメイン/SSL を選択します。  
 「ドメインを新規追加」ボタンを押します。
@@ -51,9 +50,9 @@ blog.le-collection.com を新規追加します。
 
 今回はドメインもさくらから取っているため、[さくらインターネットのドメイン画面](https://secure.sakura.ad.jp/domain/domains)にログインします。
 
-該当するドメイン(le-collection.com)の「ゾーン」を選択します。  
+該当するドメイン(example.com)の「ゾーン」を選択します。  
 ゾーン情報画面にある編集を押して、サブドメインのAレコードを追加します：  
-エントリ名：blog.le-collection.com  
+エントリ名：blog.example.com  
 タイプ：IPアドレス(A)  
 データ：(IPアドレス)  
 DNSチェック：チェックしなくてもいい
@@ -119,7 +118,7 @@ Order deny,allow
 ブログサイトと本番サイトとはWordPressのバージョンが違うため、別バージョンのphpを利用する必要があります。
 
 さくらサーバーは管理画面からはドメイン毎のPHPバージョン切り替え設定ができませんが、`.htaccess`と`php.cgi`をサーバーにあげることで切り替えられます。  
-今回はサブドメインごとにphpバージョンを切り替えるので、サブドメインのディレクトリの直下に配置します。(`/home/lecollection/www/blog.le-collection.com`)
+今回はサブドメインごとにphpバージョンを切り替えるので、サブドメインのディレクトリの直下に配置します。(例：`/home/example/www/blog.example.com`)
 
 ### 手順
 
@@ -178,8 +177,8 @@ phpMyAdminにログインしてして新規作成したデータベースにテ�
 
 旧URLがデータベースに残るので、新しいURLを一括で更新します。
 
-「検索」フィールド：`le-collection-blog.envi-de-mode-81.work`  
-「次と置換」フィールド：`blog.le-collection.com`
+「検索」フィールド：`test.com`  
+「次と置換」フィールド：`blog.example.com`
 
 ※「ドライランとして実行する」のチェックを入れたら、変更が加えられないため、事前に結果を確認できます。
 
