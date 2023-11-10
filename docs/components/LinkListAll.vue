@@ -1,7 +1,7 @@
 <template>
   <ul>
-    <li v-for="item in result">
-      <a :href="item.link">{{item.text}}</a>
+    <li v-for="(item, index) in result" :key="index">
+      <a :href="withBase(item.link)">{{item.text}}</a>
     </li>
   </ul>
 </template>
