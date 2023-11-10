@@ -6,12 +6,12 @@ hero:
   name: "Tech Blog"
   tagline: Web技術ブログ
   actions:
-    - theme: brand
-      text: 前往繁體中文頁面
-      link: /
     - theme: alt
-      text: 日本語ページへ
-      link: /ja/
+      text: 記事一覧
+      link: /ja/list
+    - theme: brand
+      text: 繁體中文頁面
+      link: /
       
 features:
   - title: Markup
