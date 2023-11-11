@@ -44,6 +44,12 @@ export default defineConfig({
       provider: 'local'
     },
 
+    lastUpdated: {
+      formatOptions: {
+        timeStyle: undefined
+      }
+    },
+
     i18nRouting: false
   },
   locales: {
