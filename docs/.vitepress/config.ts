@@ -7,6 +7,15 @@ export default defineConfig({
   base: '/vitepress-blog/',
   title: "Tech Blog",
   description: "Knowledge for Web, Front-End, Back-End, Server...",
+  head: [
+    [
+      'meta',
+      {
+        name: 'google-site-verification',
+        content: 'u1NmK442Qs40BrksIUmeRtufExYbtpsvENV3azaoNWk'
+      }
+    ]
+  ],
   lastUpdated: true,
   markdown: {
     lineNumbers: true
