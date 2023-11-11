@@ -39,6 +39,7 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
         {
           text: 'Markup',
           items: [
+            { text: 'HTML でふりがなを付ける（ruby）', link: '/ja/markup/ruby' },
             // {
             //   text: 'HTML',
             //   items: [
@@ -58,12 +59,12 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
         {
           text: 'Front-End',
           items: [
-            // {
-            //   text: 'JavaScript',
-            //   items: [
-            //     // { text: '', link: '/ja/frontend/xxx' },
-            //   ]
-            // },
+            {
+              text: 'JavaScript',
+              items: [
+                { text: 'サンプルコード - JavaScriptでドロップダウンアニメーションを作る', link: '/ja/frontend/collapse' },
+              ]
+            },
             // {
             //   text: 'TypeScript',
             //   items: [
@@ -89,7 +90,7 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
         {
           text: 'WordPress',
           items: [
-            // { text: 'Movable Type 勉強マニュアル', link: '/ja/mt/mt_learn' },
+            { text: 'WordPressの投稿の新規追加ボタンを非表示する', link: '/ja/wp/disable-create-newpost' },
           ]
         },
       ],

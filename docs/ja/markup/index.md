@@ -1,7 +1,7 @@
 # 記事一覧
 
 <script setup>
-import LinkList from '/components/LinkList.vue';
+import LinkListFlat from '/components/LinkListFlat.vue';
 </script>
 
-<LinkList />
+<LinkListFlat />
