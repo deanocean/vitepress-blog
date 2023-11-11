@@ -40,6 +40,7 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
           text: 'Markup',
           items: [
             { text: 'HTML でふりがなを付ける（ruby）', link: '/ja/markup/ruby' },
+            { text: 'レスポンシブで縦横比を固定する', link: '/ja/markup/responsive-ratio' },
             // {
             //   text: 'HTML',
             //   items: [
@@ -65,6 +66,13 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
                 { text: 'サンプルコード - JavaScriptでドロップダウンアニメーションを作る', link: '/ja/frontend/collapse' },
               ]
             },
+            {
+              text: 'Building Tools',
+              items: [
+                { text: 'Vite - ビルドされたファイル名にあるハッシュ値を取る', link: '/ja/frontend/vite_hash' },
+                { text: 'Vite - ビルドされた assets フォルダーの中身をファイルの種類ごとに分ける', link: '/ja/frontend/vite_output-assets' },
+              ]              
+            }
             // {
             //   text: 'TypeScript',
             //   items: [
@@ -90,7 +98,8 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
         {
           text: 'WordPress',
           items: [
-            { text: 'WordPressの投稿の新規追加ボタンを非表示する', link: '/ja/wp/disable-create-newpost' },
+            { text: 'WordPress - 投稿の新規追加ボタンを非表示する', link: '/ja/wp/disable-create-newpost' },
+            { text: 'WordPress - headタグの中身のサンプルコード', link: '/ja/wp/head' },
           ]
         },
       ],
@@ -106,6 +115,12 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
         {
           text: 'Server',
           items: [
+            {
+              text: 'サーバー構築',
+              items: [
+                { text: 'UbuntuでApacheサーバーをローカルで構築する手順', link: '/ja/server/ubuntu-apache-local' },
+              ]
+            },
             {
               text: 'さくらサーバー',
               items: [

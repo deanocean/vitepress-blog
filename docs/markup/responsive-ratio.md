@@ -1,6 +1,6 @@
 # 讓 iframe 可以響應式等比縮放
 
-使用 iframe 嵌入 Youtube 影片，不只是寬度隨著螢幕縮放，高度也希望等比縮放時，該怎麼做?
+使用 iframe 嵌入 Youtube 影片的時候，不只是寬度隨著螢幕縮放，高度也希望等比縮放時，該怎麼做?
 
 解法是：  
 iframe 外面包一層容器，外面的容器設定 `padding-top` 或是 `padding-bottom` 為 % 數，這樣就可以讓高度和寬度做等比例縮放，而 iframe 則是使用 `position: absolute` 滿版定位在容器裡面。  
