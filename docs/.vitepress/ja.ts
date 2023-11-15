@@ -41,6 +41,7 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
           items: [
             { text: 'HTML でふりがなを付ける（ruby）', link: '/ja/markup/ruby' },
             { text: 'レスポンシブで縦横比を固定する', link: '/ja/markup/responsive-ratio' },
+            { text: '文字内にスポットライトが動くアニメーション', link: '/ja/markup/animation-spotlight' },
             // {
             //   text: 'HTML',
             //   items: [
