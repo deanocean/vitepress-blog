@@ -43,18 +43,7 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
             { text: 'レスポンシブで縦横比を固定する', link: '/ja/markup/responsive-ratio' },
             { text: '文字内にスポットライトが動くアニメーション', link: '/ja/markup/animation-spotlight' },
             { text: 'ボタンのモジュール化の考察', link: '/ja/markup/module-button' },
-            // {
-            //   text: 'HTML',
-            //   items: [
-            //     // { text: '', link: '/ja/markup/xxx' },
-            //   ]
-            // },
-            // {
-            //   text: 'CSS',
-            //   items: [
-            //     // { text: '', link: '/ja/markup/xxx' },
-            //   ]
-            // },
+            { text: 'コピペで実装 - CSSだけで実現できる無限ループアニメーション', link: '/ja/markup/css-infinite_loop' },
           ]
         },
       ],
@@ -66,6 +55,9 @@ export const jaConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
               text: 'JavaScript',
               items: [
                 { text: 'サンプルコード - JavaScriptでドロップダウンアニメーションを作る', link: '/ja/frontend/collapse' },
+                { text: 'コピペで実装 - 追従ボタン（HTML/SCSS/JavaScript/Vite環境）', link: '/ja/frontend/fixedBtn' },
+                { text: 'コピペで実装 - モーダル（HTML/SCSS/JavaScript/Vite環境）', link: '/ja/frontend/modal' },
+                { text: 'コピペで実装 - Swiper（HTML/SCSS/JavaScript/Vite環境）', link: '/ja/frontend/swiper' },
               ]
             },
             {
